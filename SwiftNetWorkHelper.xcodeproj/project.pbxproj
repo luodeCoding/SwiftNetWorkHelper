@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		72830B0025FD88F83F9ADF85 /* Pods_SwiftNetWorkHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 573A35967AC783F64FB1D6AD /* Pods_SwiftNetWorkHelper.framework */; };
 		A920837E225DB80200C62EBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A920837D225DB80200C62EBD /* AppDelegate.swift */; };
 		A9208380225DB80200C62EBD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A920837F225DB80200C62EBD /* ViewController.swift */; };
 		A9208383225DB80200C62EBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9208381225DB80200C62EBD /* Main.storyboard */; };
 		A9208385225DB80300C62EBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9208384225DB80300C62EBD /* Assets.xcassets */; };
 		A9208388225DB80300C62EBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9208386225DB80300C62EBD /* LaunchScreen.storyboard */; };
+		A9208392225DBD8400C62EBD /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9208391225DBD8400C62EBD /* APIManager.swift */; };
+		A920839A225DE00E00C62EBD /* RxHandyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9208399225DE00E00C62EBD /* RxHandyJSON.swift */; };
+		A920839C225DF4DC00C62EBD /* TestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A920839B225DF4DC00C62EBD /* TestModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		573A35967AC783F64FB1D6AD /* Pods_SwiftNetWorkHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftNetWorkHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		748F47E8AE8AD5A55BA6EAFE /* Pods-SwiftNetWorkHelper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftNetWorkHelper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftNetWorkHelper/Pods-SwiftNetWorkHelper.debug.xcconfig"; sourceTree = "<group>"; };
 		A920837A225DB80200C62EBD /* SwiftNetWorkHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftNetWorkHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A920837D225DB80200C62EBD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A920837F225DB80200C62EBD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +28,10 @@
 		A9208384225DB80300C62EBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9208387225DB80300C62EBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A9208389225DB80300C62EBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9208391225DBD8400C62EBD /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		A9208399225DE00E00C62EBD /* RxHandyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxHandyJSON.swift; sourceTree = "<group>"; };
+		A920839B225DF4DC00C62EBD /* TestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModel.swift; sourceTree = "<group>"; };
+		FAA6AA7652D6302BB4287438 /* Pods-SwiftNetWorkHelper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftNetWorkHelper.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftNetWorkHelper/Pods-SwiftNetWorkHelper.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +39,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72830B0025FD88F83F9ADF85 /* Pods_SwiftNetWorkHelper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		10ADA2DA330979359A654662 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				748F47E8AE8AD5A55BA6EAFE /* Pods-SwiftNetWorkHelper.debug.xcconfig */,
+				FAA6AA7652D6302BB4287438 /* Pods-SwiftNetWorkHelper.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A9208371225DB80200C62EBD = {
 			isa = PBXGroup;
 			children = (
 				A920837C225DB80200C62EBD /* SwiftNetWorkHelper */,
 				A920837B225DB80200C62EBD /* Products */,
+				10ADA2DA330979359A654662 /* Pods */,
+				AC8A0FAD531A5BB0D16F98D2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +76,7 @@
 		A920837C225DB80200C62EBD /* SwiftNetWorkHelper */ = {
 			isa = PBXGroup;
 			children = (
+				A9208390225DBD5100C62EBD /* Router */,
 				A920837D225DB80200C62EBD /* AppDelegate.swift */,
 				A920837F225DB80200C62EBD /* ViewController.swift */,
 				A9208381225DB80200C62EBD /* Main.storyboard */,
@@ -64,6 +87,24 @@
 			path = SwiftNetWorkHelper;
 			sourceTree = "<group>";
 		};
+		A9208390225DBD5100C62EBD /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				A9208391225DBD8400C62EBD /* APIManager.swift */,
+				A9208399225DE00E00C62EBD /* RxHandyJSON.swift */,
+				A920839B225DF4DC00C62EBD /* TestModel.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		AC8A0FAD531A5BB0D16F98D2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				573A35967AC783F64FB1D6AD /* Pods_SwiftNetWorkHelper.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +112,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A920838C225DB80300C62EBD /* Build configuration list for PBXNativeTarget "SwiftNetWorkHelper" */;
 			buildPhases = (
+				AF950B8ED9E14891B3AA6827 /* [CP] Check Pods Manifest.lock */,
 				A9208376225DB80200C62EBD /* Sources */,
 				A9208377225DB80200C62EBD /* Frameworks */,
 				A9208378225DB80200C62EBD /* Resources */,
+				625198EE8E1858C811D31E6D /* [CP] Embed Pods Frameworks */,
+				F0DABC308D93CC509AA44DDE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,11 +174,76 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		625198EE8E1858C811D31E6D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SwiftNetWorkHelper/Pods-SwiftNetWorkHelper-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftNetWorkHelper/Pods-SwiftNetWorkHelper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF950B8ED9E14891B3AA6827 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftNetWorkHelper-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0DABC308D93CC509AA44DDE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftNetWorkHelper/Pods-SwiftNetWorkHelper-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A9208376225DB80200C62EBD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A920839A225DE00E00C62EBD /* RxHandyJSON.swift in Sources */,
+				A920839C225DF4DC00C62EBD /* TestModel.swift in Sources */,
+				A9208392225DBD8400C62EBD /* APIManager.swift in Sources */,
 				A9208380225DB80200C62EBD /* ViewController.swift in Sources */,
 				A920837E225DB80200C62EBD /* AppDelegate.swift in Sources */,
 			);
@@ -280,6 +389,7 @@
 		};
 		A920838D225DB80300C62EBD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 748F47E8AE8AD5A55BA6EAFE /* Pods-SwiftNetWorkHelper.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +408,7 @@
 		};
 		A920838E225DB80300C62EBD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAA6AA7652D6302BB4287438 /* Pods-SwiftNetWorkHelper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
